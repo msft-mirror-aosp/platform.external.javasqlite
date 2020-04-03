@@ -8,6 +8,7 @@ cc_library_shared {
         "-Wno-unused-parameter",
     ],
     srcs: ["src/main/native/sqlite_jni.c"],
+    header_libs: ["jni_headers"],
     static_libs: ["libsqlite_static_minimal"],
 
     sdk_version: "23",
